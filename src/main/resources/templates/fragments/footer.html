@@ -7,15 +7,25 @@
 
 	<div class="container">
 
-		<footer>
-			<span sec:authorize="isAuthenticated()">
+		<footer class="py-5 bg-black">
+
+			<div class="container">
+				<p class="m-0 text-center text-white small">Copyright &copy; Your CakeTopia 2018</p>
+				<br />
+				<p class="m-0 text-center text-white small"><a th:href="@{/contact}">Contacts</a></p>
+	</div>
+	<!-- /.container -->
+	<span sec:authorize="isAuthenticated()">
                 | Logged user: <span sec:authentication="name"></span> |
-                <!--Roles: <span sec:authentication="principal.authorities"></span> |-->
+		<!--Roles: <span sec:authentication="principal.authorities"></span> |-->
                 <a th:href="@{/logout}">Sign Out</a>
             </span>
 
-			<script type="text/javascript"
-					src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/webjars/jquery/3.1.1/jquery.min.js"></script>
+-->
+	<script src="../../vendor/jquery/jquery.min.js"></script>
+	<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 		</footer>
 	</div>

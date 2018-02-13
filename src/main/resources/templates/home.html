@@ -1,28 +1,35 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <title>Cake Topia</title>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 
-    <div th:replace="fragments/header :: header-css"/>
+<head>
+	<title>Cake Topia</title>
+
+	<div th:replace="fragments/header :: header-css"/>
 
 </head>
+
+
 <body>
+	<div th:replace="fragments/header :: header"/>
 
-<div th:replace="fragments/header :: header"/>
+	<header class="masthead text-center text-white">
+		<div class="masthead-content">
+			<div class="container">
+				<h1 class="masthead-heading mb-0">Cake Topia</h1>
+				<h2 class="masthead-subheading mb-0">By Vasilachi</h2>
+				<a class="btn btn-primary btn-xl rounded-pill mt-5" th:href="@{/menu}">Menu</a>
+				<a class="btn btn-primary btn-xl rounded-pill mt-5" th:href="@{/gallery}">Gallery</a>
+				<a class="btn btn-primary btn-xl rounded-pill mt-5" th:href="@{/blog}">Blog</a>
+			</div>
+		</div>
+		<div class="bg-circle-1 bg-circle"></div>
+		<div class="bg-circle-2 bg-circle"></div>
+		<div class="bg-circle-3 bg-circle"></div>
+		<div class="bg-circle-4 bg-circle"></div>
+	</header>
 
-<div class="container">
 
-    <div class="starter-template">
-        <h1>Cake Topia</h1>
-        <!--<h2>1. Visit <a th:href="@{/admin}">Admin page (Spring Security protected, Need Admin Role)</a></h2>-->
-        <!--<h2>2. Visit <a th:href="@{/user}">User page (Spring Security protected, Need User Role)</a></h2>-->
-        <h2><a th:href="@{/menu}">Menu</a></h2>
-    </div>
-
-</div>
-<!-- /.container -->
-
-<div th:replace="fragments/footer :: footer"/>
-
+	<div th:replace="fragments/footer :: footer"/>
 </body>
+
 </html>
