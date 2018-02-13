@@ -4,3 +4,4 @@
 	- Open command prompt (WIN+R > cmd)
 	- Go to project root (where pom.xml file is)
 	- run this command: mvn spring-boot:run
+4. In browser go to http://localhost:8080
